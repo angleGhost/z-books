@@ -34,7 +34,7 @@ jasypt:
       suffix: "]"
 
 cos:
-  access-key: AKIDkJcfRwA7nCKBl463lCNHvIODlOlrgE3f
-  secret-key: NTIq77tOcZFenfGadQv96nDMDn68tNZV
+  access-key: ENC[zLeTs+ArNHsSrp284Z9jvn6aZbdKaVAS4Wx7SRmGSNxiGTluHnfPlo7QgJTzd2m0hnhbqU/ZwILFT13ZslOlkDEz8SJpE8WOmm+S8EN6ogU=]
+  secret-key: ENC[XA1mjfg4KNjb3NGHLgZHFtN2wrNSe1Bxe/lLiPg8MKdgO6LBow7xWpxeuedoMT88CgtQa/BspLXicrYf2udwunVG1rMkIxhllfjb3ukNFG4=]
   region: ap-shanghai
   bucket-name: z-books-1254158972
