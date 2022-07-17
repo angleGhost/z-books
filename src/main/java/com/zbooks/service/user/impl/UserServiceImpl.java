@@ -2,7 +2,7 @@ package com.zbooks.service.user.impl;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.zbooks.mapper.user.UserMapper;
-import com.zbooks.pojo.User;
+import com.zbooks.model.entity.User;
 import com.zbooks.service.user.UserService;
 import org.springframework.stereotype.Service;
 

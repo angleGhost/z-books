@@ -1,6 +1,6 @@
 package com.zbooks.controller.user;
 
-import com.zbooks.pojo.User;
+import com.zbooks.model.entity.User;
 import com.zbooks.service.user.impl.UserServiceImpl;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
  * desc : 用户接口
  */
 @RestController
-@RequestMapping("user")
+@RequestMapping("api/user")
 @Api(tags = "用户模块")
 public class UserController {
     @Autowired

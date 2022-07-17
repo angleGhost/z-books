@@ -1,23 +1,23 @@
 package com.zbooks.model.enums;
 
 import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
 
 /**
  * Project: zbooks
- * Description: 异常：5xxx
+ * Description: 日志枚举类型
  * Version: 1.0
- * Create Time: 2022/7/16 15:06
+ * Create Time: 2022/7/16 12:38
  *
  * @author TBH
  */
+@NoArgsConstructor
 @AllArgsConstructor
-public enum ExceptionEnum implements KeyValueEnum<Integer, String> {
+public enum LogType implements KeyValueEnum<Integer, String> {
     /**
-     * 服务器发生错误
+     * Blog initialization
      */
-    SERVER_ERROR(5001, "服务器发生未知错误"),
-    UPLOAD_FILE_EXIST(5002, "文件存在"),
-    ;
+    SYSTEM_INITIALIZED(0, "系统初始化");
 
     private Integer key;
     private String value;

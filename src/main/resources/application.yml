@@ -1,11 +1,24 @@
 server:
   port: 8080
 spring:
+  servlet:
+    multipart:
+      max-file-size: 200MB
+      max-request-size: 200MB
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: ENC[1t/IUSrNhuYbuyufzi1dK36RKilTQM0o79PZWZDo+nRMLG3KUTn0iQJpgo4tXccp]
     password: ENC[sfHe7+tMGBM3wHS0IaoVITdP50IrTA+fYtcm1v4usinD2+mNfn+hpE69ZFsuKTxF]
     url: ENC[BMYmWcbv3q91u/I1xn3mxGfHG12Hqmd5a+wwKFwngs1CcrO1DolV5xbhjDCi4r1QZTVCQ39yx3ueRMSrCVTKyLWf6t8Syo23ZlEsGhOe1sD6E3sPu8OXqLedsiyBscoZQlQCBOXJJr9jOhvZI/ULRA==]
+  data:
+    mongodb:
+      host: 42.192.43.249
+      port: 27017
+      username: admin
+      password: Mongo=123
+      database: z-books
+    couchbase:
+      scope-name:
   mvc:
     pathmatch:
       matching-strategy: ant_path_matcher
@@ -13,10 +26,15 @@ spring:
 mybatis-plus:
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
-
 jasypt:
   encryptor:
     password: Zbooks
     property:
       prefix: "ENC["
       suffix: "]"
+
+cos:
+  access-key: AKIDkJcfRwA7nCKBl463lCNHvIODlOlrgE3f
+  secret-key: NTIq77tOcZFenfGadQv96nDMDn68tNZV
+  region: ap-shanghai
+  bucket-name: z-books-1254158972

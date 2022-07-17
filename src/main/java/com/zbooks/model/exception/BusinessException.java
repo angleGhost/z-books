@@ -2,6 +2,7 @@ package com.zbooks.model.exception;
 
 import com.zbooks.model.enums.ExceptionEnum;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 /**
  * Project: zbooks
@@ -12,6 +13,7 @@ import lombok.Data;
  * @author TBH
  */
 @Data
+@EqualsAndHashCode(callSuper = false)
 public class BusinessException extends RuntimeException {
     private Integer status;
     private String message;

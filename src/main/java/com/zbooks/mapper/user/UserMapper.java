@@ -1,7 +1,7 @@
 package com.zbooks.mapper.user;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.zbooks.pojo.User;
+import com.zbooks.model.entity.User;
 
 /**
  * @author TBH
@@ -9,5 +9,5 @@ import com.zbooks.pojo.User;
  * date 2022/07/07 13:22
  * desc :
  */
-public interface UserMapper  extends BaseMapper<User> {
+public interface UserMapper extends BaseMapper<User> {
 }
